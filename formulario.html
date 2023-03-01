@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário de Serviço</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-top: 30px;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			margin: 30px auto;
+			max-width: 600px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+			color: #333;
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="tel"],
+		textarea {
+			padding: 10px;
+			border: none;
+			border-radius: 3px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: #333;
+			background-color: #f2f2f2;
+			resize: none;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+			color: #fff;
+			transform: scale(1.05);
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>Formulário de Serviço</h1>
+
+	<form>
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+
+		<label for="telefone">Telefone:</label>
+		<input type="tel" id="telefone" name="telefone" required>
+
+		<label for="endereco">Endereço:</label>
+		<input type="text" id="endereco" name="endereco" required>
+
+		<label for="cpf">CPF:</label>
+		<input type="text" id="cpf" name="cpf" required>
+
+		<label for="descricao">Descrição do Serviço:</label>
+		<textarea id="descricao" name="descricao" rows="5" cols="40" required></textarea>
+
+		<input type="submit" value="Enviar">
+	</form>
+
+</body>
+</html>
+
